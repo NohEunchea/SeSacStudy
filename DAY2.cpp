@@ -10,6 +10,7 @@ void ex04();
 void ex05();
 void ex06();
 void ex07();
+void ex08();
 
 int main() 
 {
@@ -29,7 +30,10 @@ int main()
 	//ex06();
 
 	//7번 문제
-	ex07();
+	//ex07();
+
+	//8번 문제
+	ex08();
 }
 
 void ex01() 
@@ -121,3 +125,16 @@ void ex07()
 		}
 	}
 }
+
+void ex08() 
+{
+	int num;
+	cout << "정수를 입력하시오 : ";
+	cin >> num;
+
+	for (int i = 1; i <= num; i++) {
+		if (num % i == 0) {
+			cout << i << " ";
+		}
+	}
+} 
