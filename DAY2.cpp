@@ -9,6 +9,7 @@ void ex03();
 void ex04();
 void ex05();
 void ex06();
+void ex07();
 
 int main() 
 {
@@ -25,7 +26,10 @@ int main()
 	//ex05();
 
 	//6번 문제
-	ex06();
+	//ex06();
+
+	//7번 문제
+	ex07();
 }
 
 void ex01() 
@@ -106,5 +110,14 @@ void ex06() {
 			cout << "*";
 		}
 		cout << "\n";
+	}
+}
+
+void ex07() 
+{
+	for (int i = 1; i <= 100; i++) {
+		if (i % 3 == 0) {
+			cout << i << " ";
+		}
 	}
 }
