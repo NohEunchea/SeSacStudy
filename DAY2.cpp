@@ -11,6 +11,7 @@ void ex05();
 void ex06();
 void ex07();
 void ex08();
+void ex09();
 
 int main() 
 {
@@ -33,7 +34,10 @@ int main()
 	//ex07();
 
 	//8번 문제
-	ex08();
+	//ex08();
+
+	//9번 문제
+	ex09();
 }
 
 void ex01() 
@@ -138,3 +142,14 @@ void ex08()
 		}
 	}
 } 
+
+void ex09() 
+{
+	for (int i = 0; i <= 100; i++) {
+		if (i % 10 == 0) {
+			float Celsius = (i - 32.0) * 5.0 / 9.0;
+
+			cout << i << "\t" << Celsius << "\n";
+		}
+	}
+}
