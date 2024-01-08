@@ -8,20 +8,24 @@ void ex01();
 void ex03();
 void ex04();
 void ex05();
+void ex06();
 
 int main() 
 {
-	//1¹ø ¹®Á¦
+	//1ë²ˆ ë¬¸ì œ
 	//ex01();
 
-	//3¹ø ¹®Á¦
+	//3ë²ˆ ë¬¸ì œ
 	//ex03();
 
-	//4¹ø ¹®Á¦
+	//4ë²ˆ ë¬¸ì œ
 	//ex04();
 
-	//5¹ø ¹®Á¦
-	ex05();
+	//5ë²ˆ ë¬¸ì œ
+	//ex05();
+
+	//6ë²ˆ ë¬¸ì œ
+	ex06();
 }
 
 void ex01() 
@@ -29,17 +33,17 @@ void ex01()
 	string firstS;
 	string secoudS;
 
-	cout << "Ã¹¹øÂ° ¹®ÀÚ¿­";
+	cout << "ì²«ë²ˆì§¸ ë¬¸ìžì—´";
 	cin >> firstS;
 
-	cout << "µÎ¹øÂ° ¹®ÀÚ¿­";
+	cout << "ë‘ë²ˆì§¸ ë¬¸ìžì—´";
 	cin >> secoudS;
 
 	if (firstS == secoudS) {
-		cout << "°°À½";
+		cout << "ê°™ìŒ";
 	}
 	else {
-		cout << "´Ù¸§";
+		cout << "ë‹¤ë¦„";
 	}
 }
 
@@ -48,14 +52,14 @@ void ex03()
 	int days[] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
 	for (int i = 0; i < sizeof(days) / sizeof(days[0]); i++) {
-		cout << i + 1 << "¿ùÀº " << days[i] << "ÀÏ±îÁö ÀÖ½À´Ï´Ù\n";
+		cout << i + 1 << "ì›”ì€ " << days[i] << "ì¼ê¹Œì§€ ìžˆìŠµë‹ˆë‹¤\n";
 	}
 }
 
 void ex04()
 {
 	int num1, num2, num3, num4, num5;
-	cout << "Á¤¼ö¸¦ 5¹ø ÀÔ·ÂÇÏ¼¼¿ä\n";
+	cout << "ì •ìˆ˜ë¥¼ 5ë²ˆ ìž…ë ¥í•˜ì„¸ìš”\n";
 	cin >> num1;
 	cin >> num2;
 	cin >> num3;
@@ -67,12 +71,12 @@ void ex04()
 	for (int i = 0; i < sizeof(number) / sizeof(number[0]); i++) 
 	{
 		if (number[i] == 5) {
-			cout << "ÄÄÇ»ÅÍ ½Â\n";
+			cout << "ì»´í“¨í„° ìŠ¹\n";
 			break;
 		}
 
 		if (i == sizeof(number[4])) {
-			cout << "ÀÌ¿ëÀÚ ½Â\n";
+			cout << "ì´ìš©ìž ìŠ¹\n";
 		}
 	}
 }
@@ -85,10 +89,22 @@ void ex05()
 	{
 		total += input;
 
-		cout << "Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ";
+		cout << "ì •ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”: ";
 		cin >> input;
 
 	} while (input != 0);
 
-	cout << "ÇÕ°è: " <<total ;
+	cout << "í•©ê³„: " <<total ;
+}
+
+void ex06() {
+	for (int i = 0; i < 7; i++) {
+		for (int j = 0; j < i + 1; j++) {
+			cout << j+1;
+		}
+		for (int n = 0; n < 7-i; n++) {
+			cout << "*";
+		}
+		cout << "\n";
+	}
 }
